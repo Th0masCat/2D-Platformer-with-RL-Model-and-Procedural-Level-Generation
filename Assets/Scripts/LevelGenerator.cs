@@ -71,8 +71,6 @@ public class LevelGenerator : MonoBehaviour
     void Update()
     {
         CellularAutomata();
-
-        
     }
 
     void CellularAutomata()
@@ -666,7 +664,6 @@ public class LevelGenerator : MonoBehaviour
                 }
             }
         }
-        Debug.Log("Segments: " + segments.Count);
     }
 
     void CreateCriticalPath()
