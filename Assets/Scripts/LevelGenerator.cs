@@ -804,18 +804,13 @@ public class LevelGenerator : MonoBehaviour
             {
                 for (int y = 0; y < height; y++)
                 {
-<<<<<<< HEAD
                     if (generatedMap[x, y] != 1)
                     {
                         Tile color = t1;
                         Vector3Int pos = new Vector3Int(x + 1, y + 1, 0);
                         tm.SetTile(pos, color);
                     }
-=======
-                    Tile color = (generatedMap[x, y] == 1) ? t1 : t2;
-                    Vector3Int pos = new Vector3Int(x, y, 0);
-                    tm.SetTile(pos, color);
->>>>>>> 1f2e8344a72e8a43062b15060fec35a66e151836
+
                 }
             }
         }
