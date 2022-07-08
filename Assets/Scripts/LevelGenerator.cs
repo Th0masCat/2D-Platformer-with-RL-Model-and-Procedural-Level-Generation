@@ -62,14 +62,10 @@ public class LevelGenerator : MonoBehaviour
     public bool isDisplayNegativePath;
     public bool isDisplayGuidelines;
 
-    private void Start()
+    private void Awake()
     {
         curvePoints = new ArrayList();
         segments = new Dictionary<Vector2, ArrayList>();
-    }
-
-    void Update()
-    {
         CellularAutomata();
     }
 

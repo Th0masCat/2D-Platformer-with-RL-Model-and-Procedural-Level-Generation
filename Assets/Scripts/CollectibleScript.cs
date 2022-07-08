@@ -25,5 +25,11 @@ public class CollectibleScript : MonoBehaviour
             score++;
             scoreBox.text = "Score: " + score;
         }
+
+        if (collision.gameObject.CompareTag("Arrows"))
+        {
+            collectibleAnim = collision.GetComponent<Animator>();
+            collectibleAnim.SetTrigger("OnCollision");
+        }
     }
 }
