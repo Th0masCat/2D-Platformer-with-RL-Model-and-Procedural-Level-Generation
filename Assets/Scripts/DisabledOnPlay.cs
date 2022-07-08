@@ -7,8 +7,7 @@ public class DisabledOnPlay : MonoBehaviour
     private SpriteRenderer gameObj;
      void Awake()
     {
-        gameObj = GetComponent<SpriteRenderer>();
-        gameObj.enabled.Equals(false);
+        gameObject.SetActive(false);
     }
 
 }

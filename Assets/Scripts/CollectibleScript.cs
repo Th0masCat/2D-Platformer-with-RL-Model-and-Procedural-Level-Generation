@@ -9,6 +9,7 @@ public class CollectibleScript : MonoBehaviour
     static public int score = 0;
     [SerializeField] TextMeshProUGUI scoreBox;
     private Animator collectibleAnim;
+    StickyPlatform stickyPlatform;
 
     private void FixedUpdate()
     {
@@ -29,7 +30,9 @@ public class CollectibleScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Arrows"))
         {
             collectibleAnim = collision.GetComponent<Animator>();
+            stickyPlatform = collision.GetComponentInChildren<StickyPlatform>();
             collectibleAnim.SetTrigger("OnCollision");
+            stickyPlatform.platformActive = true;
         }
     }
 }
