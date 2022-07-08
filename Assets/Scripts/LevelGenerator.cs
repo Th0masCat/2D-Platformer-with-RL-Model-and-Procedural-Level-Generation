@@ -175,8 +175,6 @@ public class LevelGenerator : MonoBehaviour
     void HilbertCurve(float x, float y, float xi, float xj, float yi, float yj, int n)
     {
         /*
-         * Hilbert Curve - Original algorithm by Andrew Cumming: 
-         * http://www.fundza.com/algorithmic/space_filling/hilbert/basics/
          * def hilbert(x0, y0, xi, xj, yi, yj, n):
          *   if n <= 0:
          *     X = x0 + (xi + yi)/2
