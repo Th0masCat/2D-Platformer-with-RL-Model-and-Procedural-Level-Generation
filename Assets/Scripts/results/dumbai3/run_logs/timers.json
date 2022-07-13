@@ -1,0 +1,54 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1657703036",
+        "python_version": "3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\s3jan\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\mlagents-learn --run-id=dumbai3 --resume",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.22.2",
+        "end_time_seconds": "1657703049"
+    },
+    "total": 12.5588491,
+    "count": 1,
+    "self": 0.009126900000000049,
+    "children": {
+        "run_training.setup": {
+            "total": 0.04264880000000004,
+            "count": 1,
+            "self": 0.04264880000000004
+        },
+        "TrainerController.start_learning": {
+            "total": 12.5070734,
+            "count": 1,
+            "self": 0.0002662999999980542,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 11.6736046,
+                    "count": 1,
+                    "self": 11.6736046
+                },
+                "trainer_threads": {
+                    "total": 8.999999998593466e-07,
+                    "count": 1,
+                    "self": 8.999999998593466e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 0.8332016000000007,
+                    "count": 1,
+                    "self": 0.008653000000000688,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.8245486,
+                            "count": 1,
+                            "self": 0.8245486
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
