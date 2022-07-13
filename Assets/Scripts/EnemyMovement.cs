@@ -6,21 +6,23 @@ public class EnemyMovement : MonoBehaviour
 {
     CharacterState characterState;
     [Range(0, 100f)][SerializeField] private float speed = 0f;
+    Animator enemyAnim;
 
     void Start()
     {
         characterState = GetComponent<CharacterState>();
+        enemyAnim = GetComponent<Animator>();
     }
 
     void Update()
     {
         if (characterState.horizontal > 0 || characterState.horizontal < 0)
         {
-            GetComponent<Animator>().Play("Player_Running");
+            enemyAnim.SetInteger("state", 1);
         }
         else
         {
-            GetComponent<Animator>().Play("Player_Idle");
+            enemyAnim.SetInteger("state", 0);
         }
     }
 
