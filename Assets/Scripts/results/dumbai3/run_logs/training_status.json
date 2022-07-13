@@ -1,0 +1,47 @@
+{
+    "collectApples": {
+        "checkpoints": [
+            {
+                "steps": 499977,
+                "file_path": "results\\dumbai3\\collectApples\\collectApples-499977.onnx",
+                "reward": 20.0,
+                "creation_time": 1657672153.349134,
+                "auxillary_file_paths": [
+                    "results\\dumbai3\\collectApples\\collectApples-499977.pt"
+                ]
+            },
+            {
+                "steps": 500009,
+                "file_path": "results\\dumbai3\\collectApples\\collectApples-500009.onnx",
+                "reward": 20.0,
+                "creation_time": 1657672153.4048898,
+                "auxillary_file_paths": [
+                    "results\\dumbai3\\collectApples\\collectApples-500009.pt"
+                ]
+            },
+            {
+                "steps": 500009,
+                "file_path": "results\\dumbai3\\collectApples\\collectApples-500009.onnx",
+                "reward": null,
+                "creation_time": 1657703049.0070639,
+                "auxillary_file_paths": [
+                    "results\\dumbai3\\collectApples\\collectApples-500009.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500009,
+            "file_path": "results\\dumbai3\\collectApples.onnx",
+            "reward": null,
+            "creation_time": 1657703049.0070639,
+            "auxillary_file_paths": [
+                "results\\dumbai3\\collectApples\\collectApples-500009.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
