@@ -4,16 +4,22 @@ using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
+using UnityEngine.UI;
+using TMPro;
 
 public class IntelligentAgentScript : Agent
 {
     [SerializeField] private Transform treasure;
     [SerializeField] private Transform spikes;
 
+    static public int score = 0;
+    [SerializeField] TextMeshProUGUI scoreBox;
+
     CharacterState characterState;
 
     private void Start()
     {
+        scoreBox.text = "Score: " + score;
         characterState = GetComponent<CharacterState>();
     }
 
@@ -51,6 +57,8 @@ public class IntelligentAgentScript : Agent
         if (collision.gameObject.CompareTag("Collectibles"))
         {
             Debug.Log("Object Collected");
+            score++;
+            scoreBox.text = "Score: " + score;
             SetReward(+20f);
             EndEpisode();
         }

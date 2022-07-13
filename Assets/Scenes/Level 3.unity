@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &8598672 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4983494370479458909, guid: 0c1dcae414bb29f4f82dce1f6ce6bcaa, type: 3}
+  m_PrefabInstance: {fileID: 4983494370492064437}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &16854488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1014,6 +1025,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1024893384}
     - target: {fileID: 3054780435135458693, guid: 8c4f74b172bf2b14e9161774a9b5588c, type: 3}
+      propertyPath: scoreBox
+      value: 
+      objectReference: {fileID: 8598672}
+    - target: {fileID: 3054780435135458693, guid: 8c4f74b172bf2b14e9161774a9b5588c, type: 3}
       propertyPath: treasure
       value: 
       objectReference: {fileID: 716733131}
@@ -1080,6 +1095,10 @@ PrefabInstance:
       propertyPath: spikes
       value: 
       objectReference: {fileID: 1494068233}
+    - target: {fileID: 3054780435135458693, guid: 8c4f74b172bf2b14e9161774a9b5588c, type: 3}
+      propertyPath: scoreBox
+      value: 
+      objectReference: {fileID: 8598672}
     - target: {fileID: 3054780435135458693, guid: 8c4f74b172bf2b14e9161774a9b5588c, type: 3}
       propertyPath: treasure
       value: 
@@ -1162,6 +1181,10 @@ PrefabInstance:
       propertyPath: spikes
       value: 
       objectReference: {fileID: 114165137}
+    - target: {fileID: 3054780435135458693, guid: 8c4f74b172bf2b14e9161774a9b5588c, type: 3}
+      propertyPath: scoreBox
+      value: 
+      objectReference: {fileID: 8598672}
     - target: {fileID: 3054780435135458693, guid: 8c4f74b172bf2b14e9161774a9b5588c, type: 3}
       propertyPath: treasure
       value: 
@@ -1580,10 +1603,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 526379438}
     - target: {fileID: 2169429826827321780, guid: f87488f3cc124dc46a08f942fad5c41b, type: 3}
       propertyPath: m_Name
       value: Camera
@@ -1602,7 +1621,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2169429826827321781, guid: f87488f3cc124dc46a08f942fad5c41b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 77.21
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 2169429826827321781, guid: f87488f3cc124dc46a08f942fad5c41b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1651,6 +1670,10 @@ PrefabInstance:
       propertyPath: spikes
       value: 
       objectReference: {fileID: 1517017636}
+    - target: {fileID: 3054780435135458693, guid: 8c4f74b172bf2b14e9161774a9b5588c, type: 3}
+      propertyPath: scoreBox
+      value: 
+      objectReference: {fileID: 8598672}
     - target: {fileID: 3054780435135458693, guid: 8c4f74b172bf2b14e9161774a9b5588c, type: 3}
       propertyPath: treasure
       value: 
