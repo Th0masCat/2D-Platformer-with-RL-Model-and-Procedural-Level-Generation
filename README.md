@@ -1,2 +1,2 @@
-# Build_1
+# 2D platformer with PLG and ML
 In this project we will be developing a 2D Platformer game which uses procedural level generation and enemy AI to make the game feel more realistic and increase the difficulty level. Procedural level generation would help us to create infinite levels for the player and enemy AI would help in simulating the behaviour of an actual human player, thus making the level more challenging and fun. 
